@@ -141,7 +141,7 @@ export default {
     },
 
     connectToWebSocket () {
-      const websocket = new WebSocket(`ws://localhost:8000/${this.$route.params.uri}`)
+      const websocket = new WebSocket(`ws://localhost:8081/${this.$route.params.uri}`)
       websocket.onopen = this.onOpen
       websocket.onclose = this.onClose
       websocket.onmessage = this.onMessage
